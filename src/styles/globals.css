@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+  header {
+    @apply flex w-full bg-white text-black font-thin sm:h-16 md:h-20 h-10 transition-all duration-500 pb-14 sm:pb-14 sm:pt-2
+  }
+  body{
+    @apply bg-white;
+  }
+  .intro{
+    padding:20px;
+    background:#eee;
+  }
+  .intro2{
+    padding:20px;
+    background:#f3f3f3;
+  }
+  .intro span {
+  background:blue;
+  padding:2px;
+  }
+  nav li{
+    @apply list-none sm:m-4 sm:inline hidden hover:mt-5 transition-all duration-300
+  }
+  nav li a{
+    @apply bg-white hover:bg-slate-100 transition-colors duration-300 rounded-md p-3 
+  }
+  .fIcon{
+    @apply h-6 w-full my-2 text-blue-500 text-center align-middle
+  }
+  .feature {
+    @apply text-black font-thin text-sm p-2 m-2;
+  }
+  .contentFeature {
+    @apply flex w-full bg-[#f1f1f1] bg-gradient-to-r from-[#eee] h-[200px] my-10 border border-white
+  }
+  .inverse{
+    @apply bg-gradient-to-l from-[#f1f1f1] h-[200px] my-10
+  }
+  .welcomeFeature {
+    @apply pb-10 font-thin text-lg
+  }
+  .welcomeFeature h2 {
+    @apply pt-10
+  }
+}
